@@ -2,17 +2,6 @@
 #include "table.h"
 #include <iostream>
 using namespace std;
-TEST(pol, suka_blyat)
-{
-	List a,b;
-	a.Insert_begin(154, 12);
-	b.Insert_begin(154, 2);
-	pol b1(b);
-	pol b2(a);
-	pol b3;
-	b3 = b1 + b2;
-	EXPECT_EQ(b2.a.head->c, 12);
-}
 TEST(pol, is_eq)
 {
 	List a;
