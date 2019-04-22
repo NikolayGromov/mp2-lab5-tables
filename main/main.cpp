@@ -13,7 +13,7 @@ void main()
 	table3 t3;
 	ofstream out;          
 	out.open("\Log.txt"); 
-		out << "Ћогирование" << endl;
+		out << "Logging" << endl;
 	cout << "Enter number of polynomials" << endl;
 	cin >> r;
 	for (int i = 0; i < r; i++)
@@ -41,9 +41,9 @@ void main()
 		t1.insert(b, s);
 		t2.insert(b, s);
 		t3.insert(b, s);
-		out << " оличество операций во вставке в первую таблицы:  " <<t1.counterI<< endl;
-		out << " оличество операций во вставке во вторую таблицы: " <<t2.counterI<< endl;
-		out << " оличество операций во вставке в третью таблицы:  " <<t3.counterI<< endl;
+		out << "Number of operations in the first table insert:  " <<t1.counterI<< endl;
+		out << "Number of operations in the second table insert: " <<t2.counterI<< endl;
+		out << "Number of operations in the third table insert:  " <<t3.counterI<< endl;
 	}
 	cout << "Tables:" << endl;
 	t1.Print();
@@ -75,9 +75,9 @@ void main()
 			t1.Delete(s);
 			t2.Delete(s);
 			t3.Delete(s);
-			out << " оличество операций в удалении в первой таблице:  " << t1.counterD << endl;
-			out << " оличество операций в удалении во второй таблице: " << t2.counterD << endl;
-			out << " оличество операций в удалении в третьей таблице: " << t3.counterD << endl;
+			out << "Number of operations in delete in the first table:  " << t1.counterD << endl;
+			out << "Number of operations in delete in the second table: " << t2.counterD << endl;
+			out << "Number of operations in delete in the third table:  " << t3.counterD << endl;
 			cout << "He is dead" << endl;
 			break;
 		}
@@ -88,9 +88,9 @@ void main()
 			pol b = t1.search(s);
 			t2.search(s);
 			t3.search(s);
-			out << " оличество операций в поиске в первой таблице:    " << t1.counterS << endl;
-			out << " оличество операций в поиске во второй таблице:   " << t2.counterS << endl;
-			out << " оличество операций в поиске в третьей таблице:   " << t3.counterS << endl;
+			out << "Number of operations in search in the first table:    " << t1.counterS << endl;
+			out << "Number of operations in search in the second table:   " << t2.counterS << endl;
+			out << "Number of operations in search in the third table:    " << t3.counterS << endl;
 			cout << endl;
 			b.Print();
 			cout << endl;
