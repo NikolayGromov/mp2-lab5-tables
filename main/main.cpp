@@ -11,8 +11,8 @@ void main()
 	table1 t1;
 	table2 t2;
 	table3 t3;
-	ofstream out;          // поток для записи
-	out.open("\Log.txt"); // окрываем файл для записи
+	ofstream out;          
+	out.open("\Log.txt"); 
 		out << "Логирование" << endl;
 	cout << "Enter number of polynomials" << endl;
 	cin >> r;

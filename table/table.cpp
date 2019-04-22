@@ -79,23 +79,6 @@ void table2::insert(pol b, string s)
 					counterI++;
 					return;
 				}
-				else
-				{
-					counterI++;
-					if (counter == 1) {
-						a[counter++] = c;
-						counterI++;
-						return;
-					}
-					else {
-						for (int k = counter - 1; k > j; k--)
-							a[k + 1] = a[k];
-						a[++j] = c;
-						counterI++;
-						counter++;
-						return;
-					}
-				}
 			}
 			else
 			{
